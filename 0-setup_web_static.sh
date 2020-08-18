@@ -30,7 +30,5 @@ sudo rm /data/web_static/current;
 sudo ln -s /data/web_static/current /data/web_static/releases/test/;
 fi
 
-sudo chown ubuntu /data/;
-sudo chgrp ubuntu /data/;
-
+sudo chown -R ubuntu:ubuntu /data/;
 sudo service nginx restart;
