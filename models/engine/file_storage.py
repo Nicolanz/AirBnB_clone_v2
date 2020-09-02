@@ -65,3 +65,7 @@ class FileStorage:
             if obj_remove in FileStorage.__objects:
                 del FileStorage.__objects[obj_remove]
         self.save()
+
+    def close(self):
+        """Close method"""
+        reload(self)
